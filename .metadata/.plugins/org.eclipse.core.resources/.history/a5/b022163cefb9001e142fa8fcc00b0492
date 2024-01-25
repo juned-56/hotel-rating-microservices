@@ -1,0 +1,5 @@
+package com.api.rating.service.web.repository;
+
+public interface RatingRepository {
+
+}

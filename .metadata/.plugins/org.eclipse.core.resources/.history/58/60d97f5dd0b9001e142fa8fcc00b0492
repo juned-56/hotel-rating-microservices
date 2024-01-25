@@ -1,0 +1,10 @@
+package com.api.hotel.service.web.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "hotels")
+public class Hotel {
+
+}

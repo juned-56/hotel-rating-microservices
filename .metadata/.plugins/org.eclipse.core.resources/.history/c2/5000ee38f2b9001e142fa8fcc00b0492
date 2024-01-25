@@ -1,0 +1,38 @@
+package com.api.rating.service.web.serviceImpl;
+import java.util.List;
+import java.util.UUID;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import com.api.rating.service.web.entity.Rating;
+import com.api.rating.service.web.repository.RatingRepository;
+import com.api.rating.service.web.service.RatingService;
+
+@Service
+public class RatingServiceImpl implements RatingService{
+
+	@Autowired
+	private RatingRepository ratingRepository;
+	
+	@Override
+	public Rating createRating(Rating rating) {
+		String randomRatingId = UUID.randomUUID().toString();
+		rating.setRatingId(randomRatingId);
+		return ratingRepository.save(rating);
+	}
+
+	@Override
+	public List<Rating> allRatings() {
+		return ratingRepository.findAll();
+	}
+
+	@Override
+	public List<Rating> getRatingByUserId(String userId) {
+		return null;
+	}
+
+	@Override
+	public List<Rating> getRatingByHotelId(String hotelId) {
+		return null;
+	}
+
+}

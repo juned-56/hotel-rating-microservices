@@ -1,0 +1,15 @@
+package com.api.user.service.web.feignClients.service;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.api.user.service.web.entity.Rating;
+
+@FeignClient("RATING-SERVICE ")
+public interface RatingService {
+	
+	@GetMapping("/rating/user/{userId}")
+	public Rating getRatingByUserId(@PathVariable String userId);
+
+}

@@ -1,0 +1,5 @@
+package com.api.rating.service.web.entity;
+
+public class Hotel {
+
+}

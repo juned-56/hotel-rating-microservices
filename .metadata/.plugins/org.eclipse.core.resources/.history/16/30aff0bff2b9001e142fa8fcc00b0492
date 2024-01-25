@@ -1,0 +1,5 @@
+package com.api.rating.service.web.controller;
+
+public class RartingController {
+
+}

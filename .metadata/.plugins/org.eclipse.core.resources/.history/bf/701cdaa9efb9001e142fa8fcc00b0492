@@ -1,0 +1,5 @@
+package com.api.rating.service.web.service;
+
+public interface RatingService {
+
+}

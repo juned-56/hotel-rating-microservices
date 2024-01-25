@@ -1,0 +1,12 @@
+package com.api.user.service.web.service;
+import java.util.List;
+import com.api.user.service.web.entity.User;
+
+public interface UserService {
+	User saveUser(User user);
+	List<User> getAllUsers();
+	User getUser(String userId);
+	void deleteUserById(String userId);
+	User updateUser(String userId, User user);
+
+}

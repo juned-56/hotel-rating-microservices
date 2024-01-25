@@ -1,0 +1,5 @@
+package com.api.user.service.web.feignClients.service;
+
+public interface HotelService {
+
+}
